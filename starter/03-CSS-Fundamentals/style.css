@@ -1,0 +1,114 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+/*祖先后代选择器
+article header p {
+  font-style: italic;
+}
+*/
+
+/*id选择器*/
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/* class选择器 */
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  border-radius: 10px;
+}
+
+body {
+  background-color: #ead15787;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+/* 对特定元素设定 */
+/* li:nth-child(odd) {
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+li:nth-child(even) {
+  background-color: azure;
+} */
+
+/* 错误：article的第一个元素不是p，故不起作用 */
+article p:first-child {
+  color: red;
+}
+
+a {
+  color: #1098ad;
+}
