@@ -109,6 +109,28 @@ article p:first-child {
   color: red;
 }
 
-a {
+/* 对所有的a元素进行渲染 */
+/* a {
+  color: red;
+} */
+/* 只对含有真正链接href的a元素进行渲染
+text-decoration: none;对文本进行修饰，去掉下划线 */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+/* 对已访问过的链接设置不同样式 */
+a:visited {
   color: #1098ad;
 }
+/* 当鼠标悬停在锚元素上，锚元素改变样式 */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline;
+}
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/* LVHA */
