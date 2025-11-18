@@ -1,12 +1,51 @@
-/* * {
-  border-top: 10px solid #1098ad;
-} */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 页面部分 */
 body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
 }
 
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+/* 填充速记：
+1：上 右 下 左
+2：上下 左右 */
+.post-header {
+  margin-bottom: 40px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  border-radius: 10px;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 50px 0;
+  width: 500px;
+}
+
+/* 小元素 */
 h1,
 h2,
 h3 {
@@ -20,10 +59,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -31,15 +73,26 @@ h4 {
   text-transform: uppercase;
   text-align: center;
 }
-
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
 p {
   font-size: 22px;
-
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 
 li {
   font-size: 20px;
+  /* padding-bottom: 10px; */
+  margin-bottom: 10px;
+  display: inline;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /*祖先后代选择器
@@ -66,17 +119,6 @@ article header p {
 
 .related {
   list-style: square;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  border-radius: 10px;
 }
 
 /* .first-li {
@@ -150,6 +192,16 @@ footer p {
 nav p {
   font-size: 18px;
 } */
-nav {
-  font-size: 18px;
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
 }
