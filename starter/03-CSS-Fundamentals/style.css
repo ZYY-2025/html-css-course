@@ -7,11 +7,15 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 .container {
   width: 800px;
   margin: 0 auto;
+  padding: 10px;
+
+  /* position: relative; */
 }
 
 .main-header {
@@ -25,6 +29,7 @@ body {
 2：上下 左右 */
 .post-header {
   margin-bottom: 40px;
+  /* position: relative; */
 }
 
 nav {
@@ -88,7 +93,7 @@ li {
   font-size: 20px;
   /* padding-bottom: 10px; */
   margin-bottom: 10px;
-  display: inline;
+  /* display: inline; */
 }
 
 li:last-child {
@@ -204,4 +209,37 @@ nav a:link {
   padding: 20px;
 
   display: block; */
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  /* 默认相对视口的左下角*/
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+
+  /* 在页面的右下角，而非视口(对其祖先元素设置position属性为absolute、relative、fixed等) */
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+p::first-line {
+  color: red;
 }
