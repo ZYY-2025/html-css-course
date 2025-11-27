@@ -202,14 +202,17 @@ nav p {
   width: 100%;
   height: auto;
 }
-
+nav {
+  /* 行内块元素、行内元素的文本对齐属性是由父元素的text-align决定的 */
+  /* text-align: center; */
+}
 nav a:link {
   /* background-color: orangered;
   margin: 20px;
   padding: 20px;
 
   display: block; */
-
+  /* text-align: center; */
   margin-right: 30px;
   margin-top: 10px;
   display: inline-block;
@@ -222,7 +225,7 @@ nav a:link:last-child {
 button {
   font-size: 22px;
   padding: 20px;
-  cursor: pointer;
+  cursor: url("img/24.png"), pointer;
 
   /* 默认相对视口的左下角*/
   /* position: absolute;
@@ -240,7 +243,7 @@ h1::first-letter {
   margin-right: 5px;
 }
 h3 + p::first-line {
-  color: red;
+  color: rgba(134, 86, 23, 0.699);
 }
 
 h2 {
