@@ -5,20 +5,28 @@
 /* 页面部分 */
 body {
   color: #444;
+  background-color: #fafaff;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
   position: relative;
+  /* background-image: url("img/back3.jpg"); */
+  /* background-size: cover; */
+  /*background-attachment: fixed;  固定背景，内容滚动 */
+  /* min-height: 100vh; 确保最小高度为视口高度 */
 }
 
 .container {
   width: 800px;
   margin: 0 auto;
   padding: 10px;
-
   /* position: relative; */
 }
 
 .main-header {
+  border-width: 5px;
+  border-style: dashed solid;
+  border-color: #8bc4ea;
+  border-radius: 10px;
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
@@ -29,6 +37,8 @@ body {
 2：上下 左右 */
 .post-header {
   margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 3px double;
   /* position: relative; */
 }
 
@@ -226,7 +236,7 @@ button {
   font-size: 22px;
   padding: 20px;
   cursor: url("img/24.png"), pointer;
-
+  border-radius: 10px;
   /* 默认相对视口的左下角*/
   /* position: absolute;
   bottom: 0;
@@ -237,7 +247,11 @@ button {
   bottom: 50px;
   right: 50px;
 }
-
+button:hover {
+  border-width: 3px;
+  border-style: inset;
+  color: red;
+}
 h1::first-letter {
   font-style: normal;
   margin-right: 5px;
@@ -263,4 +277,23 @@ h2::after {
   position: absolute;
   top: -10px;
   right: -25px;
+}
+
+.related {
+  margin-top: 50px;
+}
+.related-li {
+  position: relative;
+  height: 80px;
+  margin-bottom: 50px;
+}
+li img {
+  position: absolute;
+  transform: translateY(-40%);
+}
+li a {
+  margin-left: 76px;
+}
+li p {
+  margin-top: 20px;
 }
